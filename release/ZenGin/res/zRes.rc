@@ -1,0 +1,498 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "zWin32_Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "zWin32_Version.h"
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,130,24,50,14
+END
+
+IDD_DIALOG2 DIALOG DISCARDABLE  0, 0, 187, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,130,24,50,14
+END
+
+IDD_SPLASH DIALOGEX 0, 0, 15, 13
+STYLE DS_SYSMODAL | DS_CENTER | WS_POPUP | WS_BORDER
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_SPLASH_DISPLAY,"Static",SS_BITMAP,0,0,15,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 8
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 6
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+#ifdef LANG_ENU
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splash_enu.bmp"
+#else
+IDB_SPLASH              BITMAP  DISCARDABLE     "Splash.bmp"
+#endif
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DIALOG_CRASH DIALOG DISCARDABLE  0, 0, 228, 137
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Application Error"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Quit",IDC_QUIT,163,114,58,14
+    LTEXT           "",IDC_ERRORTEXT,7,35,214,72,SS_NOPREFIX
+    CONTROL         "",IDC_ERRORCAPTION,"Button",BS_OWNERDRAW,7,7,214,22
+END
+
+#if defined(APSTUDIO_INVOKED) || !defined(_DEBUG)
+DIALOG_FILENOTFOUND DIALOG DISCARDABLE  0, 0, 210, 74
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Not Found"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,84,53,40,14
+    ICON            "",IDC_ICONINFO,7,7,18,20
+    LTEXT           "Could not find the file:",IDC_STATIC,37,7,69,8
+    LTEXT           "",IDC_FILENOTFOUND,41,18,151,8
+    LTEXT           "Make sure the program is properly installed and retry.",
+                    IDC_STATIC,37,29,166,8
+END
+#endif
+
+DIALOG_OUTOFMEM DIALOG DISCARDABLE  0, 0, 250, 158
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Out of Memory"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Retry",ID_RETRY,199,137,44,14
+    PUSHBUTTON      "&Cancel",ID_CANCEL,149,137,45,14
+    CTEXT           "",IDC_MEMERROR,7,7,236,16
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,27,236,1
+    ICON            144,IDC_STATIC,11,35,18,20
+    LTEXT           "You can gain free memory by closing other running applications or freeing up more space on your Windows swap drive.",
+                    IDC_STATIC,38,33,205,18
+    LTEXT           "You can make more memory available now and press the retry button.",
+                    IDC_STATIC,7,58,236,9
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,70,236,1
+    GROUPBOX        "Available memory",IDC_STATIC,7,76,119,75
+    RTEXT           "",IDC_MEMPHYSFREE,13,86,46,8,SS_NOPREFIX
+    LTEXT           "KB Physical free",IDC_STATIC,63,86,56,8
+    RTEXT           "",IDC_MEMSWAPFREE,13,94,46,8,SS_NOPREFIX
+    LTEXT           "KB Swap file free",IDC_STATIC,63,94,56,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,24,105,39,1
+    LTEXT           "+",IDC_STATIC,64,102,8,8
+    RTEXT           "",IDC_MEMFREE,13,110,46,8,SS_NOPREFIX
+    LTEXT           "KB Free memory",IDC_STATIC,63,110,56,8
+    RTEXT           "",IDC_MEMREQUIRED,13,119,46,8,SS_NOPREFIX
+    LTEXT           "KB Required",IDC_STATIC,63,119,56,8
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,24,131,39,1
+    LTEXT           "-",IDC_STATIC,64,126,8,8
+    RTEXT           "",IDC_MEMDIFF,13,137,46,8,SS_NOPREFIX
+    LTEXT           "KB Difference",IDC_STATIC,63,137,56,8
+    GROUPBOX        "Memory status",IDC_STATIC,132,76,111,39
+    RTEXT           "",IDC_MEMPHYS,134,86,35,8,SS_NOPREFIX
+    LTEXT           "KB Physical memory",IDC_STATIC,173,86,64,8
+    RTEXT           "",IDC_MEMSWAP,134,94,35,8,SS_NOPREFIX
+    LTEXT           "KB Swap file",IDC_STATIC,173,94,41,8
+    RTEXT           "",IDC_MEMLOAD,134,103,35,8,SS_NOPREFIX
+    LTEXT           "Memory load",IDC_STATIC,173,103,41,8
+END
+
+INPUTDLGBOX DIALOGEX 0, 0, 222, 30
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTROLPARENT
+CAPTION "Input Box"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "OK",IDOK,175,3,45,12
+    PUSHBUTTON      "Cancel",IDCANCEL,175,16,45,12
+    EDITTEXT        ID_USERTEXT,1,16,169,12,ES_AUTOHSCROLL
+    LTEXT           "",ID_QUERYTEXT,1,6,169,8
+END
+
+#if defined(APSTUDIO_INVOKED) || defined(_DEBUG)
+#if defined(APSTUDIO_INVOKED)
+DIALOG_FILENOTFOUND$(_DEBUG) DIALOGEX 0, 0, 292, 154
+#else
+DIALOG_FILENOTFOUND DIALOGEX 0, 0, 292, 154
+#endif
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&End Task",IDC_CLOSE,134,133,55,14
+    CONTROL         "",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX |
+                    WS_GROUP,7,62,182,65,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_EXCEPTIONCAPTION,"Button",BS_OWNERDRAW,7,7,278,22
+    LTEXT           "",IDC_EXCEPTIONTEXT,7,34,182,24,SS_NOPREFIX
+    CONTROL         "",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX |
+                    WS_GROUP,201,44,84,103,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,195,33,1,114
+    CONTROL         "",IDC_CALLSTACK,"Static",SS_LEFTNOWORDWRAP |
+                    SS_NOPREFIX | WS_GROUP,203,46,79,98
+    LTEXT           "",IDC_SEGREGLIST,49,66,31,32,SS_NOPREFIX
+    RTEXT           "DS =\nES =\nFS =\nGS =\nCS:EIP =\nSS:ESP =\nSS:EBP =",
+                    IDC_STATIC,14,66,32,56
+    RTEXT           "EAX =\nEBX =\nECX =\nEDX =\nESI =\nEDI =\nEBP =",
+                    IDC_STATIC,115,67,22,56
+    RTEXT           "",IDC_INTREGLIST,140,67,41,57,SS_NOPREFIX
+    LTEXT           "",IDC_PTRREGLIST,49,98,62,23
+    LTEXT           "Call Stack",IDC_STATIC,202,34,33,8
+END
+#endif
+
+DIALOG_ASSERT DIALOGEX 0, 0, 608, 244
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Application Error - An Assertion Failed"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&End Task",IDC_CLOSE,514,223,87,14
+    CONTROL         "",IDC_ASSERTCAPTION,"Button",BS_OWNERDRAW,190,7,243,22
+    LTEXT           "An assertion has failed. Press '&End Task' to abort the process.",
+                    IDC_EXCEPTIONTEXT,339,31,262,16
+    CONTROL         "",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX |
+                    WS_GROUP,15,36,288,201,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,100,7,1,28
+    CONTROL         "",IDC_CALLSTACK,"Static",SS_LEFTNOWORDWRAP |
+                    SS_NOPREFIX | WS_GROUP,19,38,279,192
+    LTEXT           "Call Stack",IDC_STATIC,13,20,33,8
+    LTEXT           "Assertion:",IDC_STATIC,339,64,32,8
+    LTEXT           "Reason:",IDC_REASON_TEXT,339,80,28,8
+    LTEXT           "",IDC_ASSERTION,372,65,229,16,SS_NOPREFIX
+    LTEXT           "",IDC_REASON,368,82,226,59,SS_NOPREFIX
+    LTEXT           "File:",IDC_STATIC,339,56,14,8
+    LTEXT           "",IDC_FILE,374,56,227,8,SS_NOPREFIX
+    PUSHBUTTON      "&Debug",IDC_DEBUG,338,223,50,14
+    LTEXT           "An error description has been copied to the clipboard.",
+                    IDC_STATIC,339,169,255,48,NOT WS_GROUP
+END
+
+DIALOG_BOUNDS DIALOGEX 0, 0, 582, 245
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+CAPTION "Application Error - Bounds Check Failed"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&End Task",IDC_CLOSE,520,224,55,14
+    CONTROL         "",IDC_ASSERTCAPTION,"Button",BS_OWNERDRAW,145,7,293,22
+    LTEXT           "A bounds check on a variable failed. Press '&End Task' to abort the process.",
+                    IDC_EXCEPTIONTEXT,282,31,293,16
+    CONTROL         "",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX |
+                    WS_GROUP,7,33,252,205,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,100,7,1,231
+    CONTROL         "",IDC_CALLSTACK,"Static",SS_LEFTNOWORDWRAP |
+                    SS_NOPREFIX | WS_GROUP,13,38,240,194
+    LTEXT           "Call Stack",IDC_STATIC,7,7,33,8
+    LTEXT           "Check:",IDC_STATIC,282,64,22,8
+    LTEXT           "Comment:",IDC_REASON_TEXT,282,80,33,8
+    LTEXT           "",IDC_ASSERTION,316,64,242,11,SS_NOPREFIX
+    LTEXT           "",IDC_REASON,313,81,230,63,SS_NOPREFIX
+    LTEXT           "File:",IDC_STATIC,282,56,28,8
+    LTEXT           "",IDC_FILE,315,56,237,8,SS_NOPREFIX
+    PUSHBUTTON      "&Debug",IDC_DEBUG,463,224,50,14
+    LTEXT           "An error description has been copied to the clipboard.",
+                    IDC_STATIC,282,169,263,47
+END
+
+DIALOG_EXCEPTION DIALOGEX 0, 0, 600, 299
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION |
+    WS_SYSMENU
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&End Task",IDC_CLOSE,526,276,55,14
+    CONTROL         "",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX |
+                    WS_GROUP,7,60,182,65,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_EXCEPTIONCAPTION,"Button",BS_OWNERDRAW,173,6,278,
+                    22
+    LTEXT           "",IDC_EXCEPTIONTEXT,7,34,182,24,SS_NOPREFIX
+    CONTROL         "",IDC_STATIC,"Static",SS_SIMPLE | SS_NOPREFIX |
+                    WS_GROUP,4,153,578,112,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,42,140,541,4
+    CONTROL         "",IDC_CALLSTACK,"Static",SS_LEFTNOWORDWRAP |
+                    SS_NOPREFIX | WS_GROUP,8,160,569,99
+    LTEXT           "",IDC_SEGREGLIST,49,66,31,32,SS_NOPREFIX
+    RTEXT           "DS =\nES =\nFS =\nGS =\nCS:EIP =\nSS:ESP =\nSS:EBP =",
+                    IDC_STATIC,14,66,32,56
+    RTEXT           "EAX =\nEBX =\nECX =\nEDX =\nESI =\nEDI =\nEBP =",
+                    IDC_STATIC,115,67,22,56
+    RTEXT           "",IDC_INTREGLIST,140,67,41,57,SS_NOPREFIX
+    LTEXT           "",IDC_PTRREGLIST,49,98,62,23
+    LTEXT           "Call Stack",IDC_STATIC,4,138,33,8
+    LTEXT           "An error description has been copied to the clipboard.",
+                    IDC_STATIC,9,272,506,23
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    DIALOG_CRASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    DIALOG_FILENOTFOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    DIALOG_OUTOFMEM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 243
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    "DIALOG_FILENOTFOUND$(_DEBUG)", DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        VERTGUIDE, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    DIALOG_ASSERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 601
+        VERTGUIDE, 319
+        VERTGUIDE, 338
+        VERTGUIDE, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    DIALOG_BOUNDS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 575
+        VERTGUIDE, 259
+        VERTGUIDE, 282
+        VERTGUIDE, 552
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    DIALOG_EXCEPTION, DIALOG
+    BEGIN
+        RIGHTMARGIN, 292
+        BOTTOMMARGIN, 154
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION _APP_RCVERSION
+ PRODUCTVERSION _APP_RCVERSION
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+   BLOCK "StringFileInfo"
+   BEGIN
+#ifdef LANG_ENU
+        BLOCK "040904b0"
+#else
+        BLOCK "040704b0"
+#endif
+        BEGIN
+            VALUE "CompanyName", _APP_COMPANY
+            VALUE "FileDescription", _APP_NAME
+            VALUE "FileVersion", _APP_VERSION
+            VALUE "LegalCopyright", _APP_COPYRIGHT
+            VALUE "ProductName", _APP_PROGRAM
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+#ifdef LANG_ENU
+        VALUE "Translation", 0x409, 1200
+#else
+        VALUE "Translation", 0x407, 1200
+#endif
+    END
+END
+
+1 24 "Gothic2.exe.manifest"
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_GOTHIC              ICON    DISCARDABLE     "Gothic2.ico"
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Holländisch (Niederlande) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NLD)
+#ifdef _WIN32
+LANGUAGE LANG_DUTCH, SUBLANG_DUTCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "zWin32_Resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""afxres.h""\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""zWin32_Version.h""\0"
+END
+
+4 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Holländisch (Niederlande) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

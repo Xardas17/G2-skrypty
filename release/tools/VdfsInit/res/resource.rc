@@ -1,0 +1,182 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Deutsch (Deutschland) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Deutsch (Deutschland) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Englisch (USA) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+#ifdef LANG_ENU
+ FILEVERSION 2,6,0,1
+ PRODUCTVERSION 2,6,0,1
+#else
+ FILEVERSION 2,6,0,0
+ PRODUCTVERSION 2,6,0,0
+#endif
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+#ifdef LANG_ENU
+        BLOCK "040904b0"
+#else
+        BLOCK "040704b0"
+#endif
+        BEGIN
+            VALUE "CompanyName", "Piranha Bytes\0"
+            VALUE "FileDescription", "VDFS Init Tool\0"
+            VALUE "FileVersion", "2.6\0"
+            VALUE "LegalCopyright", "Copyright © 2002,2003 Pluto 13 GmbH\0"
+            VALUE "ProductName", "Gothic II\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+#ifdef LANG_ENU
+        VALUE "Translation", 0x409, 1200
+#else
+        VALUE "Translation", 0x407, 1200
+#endif
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON    DISCARDABLE     "VdfsInit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE
+BEGIN
+    IDD_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROGRESS DIALOGEX 0, 0, 298, 49
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION " Gothic II"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",0x0,7,28,284,14
+#ifdef LANG_ENU
+    CTEXT           "Please wait while initializing and configuring the Virtual Disk File System.\rDepending on your system this may take up to some minutes.",IDC_STATIC,7,7,284,20,SS_NOPREFIX | NOT WS_GROUP
+#else
+    CTEXT           "Bitte warten Sie bis die Initialisierung und Konfiguration des virtuellen Dateisystems abgeschlossen wurde. Dies kann, je nach System, bis zu mehreren Minuten dauern.",IDC_STATIC,7,7,284,20,SS_NOPREFIX | NOT WS_GROUP
+#endif
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Manifest
+//
+
+1 24 "VdfsInit.manifest"
+
+#endif    // Englisch (USA) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
