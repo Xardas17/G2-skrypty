@@ -1,0 +1,50 @@
+#ifndef __ZOPTION_CONST_H__
+#define __ZOPTION_CONST_H__
+
+#ifndef __ZSTRING_H__
+#include "zString.h"
+#endif
+
+// engine constants, define here
+extern const zSTRING ZOPT_LANGUAGE;
+extern const zSTRING ZOPT_DEF_LANGUAGE;
+extern const zSTRING ZOPT_SND_SFX_VOL;
+extern const zSTRING ZOPT_SND_SPEECH_VOL;
+extern const zSTRING ZOPT_SND_MUSIC_VOL;
+extern const zSTRING ZOPT_SND_3DPROV;
+extern const zSTRING ZOPT_SND_SPEAKERTYPE;
+extern const zSTRING ZOPT_SND_SAMPLERATE;
+extern const zSTRING ZOPT_SND_USEREVERB;
+extern const zSTRING ZOPT_VID_GAMMA;
+extern const zSTRING ZOPT_VID_RES;
+extern const zSTRING ZOPT_JOY_ENABLE;
+extern const zSTRING ZOPT_GAMEKEY_UP;
+extern const zSTRING ZOPT_GAMEKEY_DOWN;
+extern const zSTRING ZOPT_GAMEKEY_LEFT;
+extern const zSTRING ZOPT_GAMEKEY_RIGHT;
+extern const zSTRING ZOPT_GAMEKEY_ACTION;
+extern const zSTRING ZOPT_GAMEKEY_SLOW;
+extern const zSTRING ZOPT_GAMEKEY_SMOVE;
+extern const zSTRING ZOPT_GAMEKEY_WEAPON;
+extern const zSTRING ZOPT_GAMEKEY_SNEAK;
+extern const zSTRING ZOPT_GAMEKEY_LOOK;
+extern const zSTRING ZOPT_GAMEKEY_LOOK_FP;
+extern const zSTRING ZOPT_GAMEKEY_END;
+extern const zSTRING ZOPT_GAMEKEY_STRAFELEFT;
+extern const zSTRING ZOPT_GAMEKEY_STRAFERIGHT;
+
+extern const zSTRING ZOPT_GAMEKEY_INVENTORY;
+
+extern const zSTRING ZOPT_GAMEKEY_SCREEN_STATUS;
+extern const zSTRING ZOPT_GAMEKEY_SCREEN_LOG;
+extern const zSTRING ZOPT_GAMEKEY_SCREEN_MAP;
+extern const zSTRING ZOPT_GAMEKEY_LOCK_TARGET;
+extern const zSTRING ZOPT_GAMEKEY_PARADE;
+extern const zSTRING ZOPT_GAMEKEY_ACTIONLEFT;
+extern const zSTRING ZOPT_GAMEKEY_ACTIONRIGHT;
+extern const zSTRING ZOPT_GAMEKEY_LAME_POTION;
+extern const zSTRING ZOPT_GAMEKEY_LAME_HEAL;
+
+#endif
+
+
