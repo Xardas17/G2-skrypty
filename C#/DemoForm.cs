@@ -44,7 +44,7 @@ namespace ParticleFxRenderer
      lsppartavg = 4000;
      lsppartvar = 1000;
      flygravity_s = ""0 -0.0000001 0"";
-     visname_s = ""mfx_magiccloud.TGA"";
+     visname_s = ""C:\Users\SPCX\Desktop\Nowy folder (2)\Nowy folder\obj\Debug\MFX_MAGICCLOUD.png"";
      vistexisquadpoly = 1;
      vistexanifps = 18;
      vistexaniislooping = 2;
@@ -84,6 +84,24 @@ namespace ParticleFxRenderer
             }
 
             system.SetTexture(Image.FromFile(path));
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // DemoForm
+            // 
+            this.ClientSize = new System.Drawing.Size(282, 253);
+            this.Name = "DemoForm";
+            this.Load += new System.EventHandler(this.DemoForm_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void DemoForm_Load(object sender, System.EventArgs e)
+        {
+
         }
     }
 }

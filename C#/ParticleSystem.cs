@@ -153,7 +153,7 @@ namespace ParticleFxRenderer
             var v = Next01();
             var theta = 2f * (float)Math.PI * u;
             var phi = (float)Math.Acos(2f * v - 1f);
-            var radius = Definition.ShapeRadius * (float)Math.Cbrt(Next01());
+            var radius = Definition.ShapeRadius * (float)Math.Pow(Next01(), 1.0 / 3.0);
             return new Vector3f(
                 radius * (float)(Math.Sin(phi) * Math.Cos(theta)),
                 radius * (float)(Math.Sin(phi) * Math.Sin(theta)),
@@ -233,9 +233,9 @@ namespace ParticleFxRenderer
                 {
                     var matrix = new float[][]
                     {
-                        new float[] { 1f, 0f, 0f, 0f, 0f },
-                        new float[] { 0f, 1f, 0f, 0f, 0f },
-                        new float[] { 0f, 0f, 1f, 0f, 0f },
+                           new float[] { colorScale, 0f, 0f, 0f, 0f },
+                        new float[] { 0f, colorScale, 0f, 0f, 0f },
+                        new float[] { 0f, 0f, colorScale, 0f, 0f },
                         new float[] { 0f, 0f, 0f, color.A / 255f, 0f },
                         new float[] { 0f, 0f, 0f, 0f, 1f }
                     };
@@ -254,17 +254,58 @@ namespace ParticleFxRenderer
             }
             else
             {
-                using (var brush = new SolidBrush(color))
+                var blendedColor = ApplyColorScale(color, Definition.AlphaBlendFunc);
+                using (var brush = new SolidBrush(blendedColor))
                 {
                     graphics.FillEllipse(brush, rect);
                 }
             }
+            graphics.CompositingMode = originalCompositingMode;
         }
 
         private float Next01() => (float)_random.NextDouble();
 
         private float NextVariance(float variance) => (Next01() * 2f - 1f) * variance;
 
+        private static System.Drawing.Drawing2D.CompositingMode GetCompositingMode(AlphaFunc alphaFunc)
+        {
+            switch (alphaFunc)
+            {
+                case AlphaFunc.Multiply:
+                    return System.Drawing.Drawing2D.CompositingMode.SourceOver;
+                case AlphaFunc.Add:
+                case AlphaFunc.Blend:
+                default:
+                    return System.Drawing.Drawing2D.CompositingMode.SourceOver;
+            }
+        }
+
+        private static float GetColorScale(AlphaFunc alphaFunc)
+        {
+            switch (alphaFunc)
+            {
+                case AlphaFunc.Add:
+                    return 1.35f;
+                case AlphaFunc.Multiply:
+                    return 0.65f;
+                default:
+                    return 1f;
+            }
+        }
+
+        private static Color ApplyColorScale(Color color, AlphaFunc alphaFunc)
+        {
+            var scale = GetColorScale(alphaFunc);
+            if (Math.Abs(scale - 1f) < 0.0001f)
+            {
+                return color;
+            }
+
+            var r = (int)Math.Min(255f, color.R * scale);
+            var g = (int)Math.Min(255f, color.G * scale);
+            var b = (int)Math.Min(255f, color.B * scale);
+            return Color.FromArgb(color.A, r, g, b);
+        }
         private static float DegreesToRadians(float degrees) => degrees * (float)Math.PI / 180f;
     }
 }

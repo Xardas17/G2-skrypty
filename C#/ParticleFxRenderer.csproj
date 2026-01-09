@@ -1,4 +1,4 @@
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -9,7 +9,6 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,16 +35,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Camera2D.cs" />
-    <Compile Include="DemoForm.cs" />
+    <Compile Include="DemoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DScriptParticleParser.cs" />
     <Compile Include="MathTypes.cs" />
     <Compile Include="Particle.cs" />
     <Compile Include="ParticleEmitterDefinition.cs" />
-    <Compile Include="ParticleRenderControl.cs" />
+    <Compile Include="ParticleRenderControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ParticleSystem.cs" />
     <Compile Include="Program.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="app.config" />
+    <EmbeddedResource Include="DemoForm.resx">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

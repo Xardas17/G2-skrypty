@@ -1,0 +1,4 @@
+C:\Users\SPCX\Desktop\skryptyg2\C#\obj\Debug\ParticleFxRenderer.csproj.AssemblyReference.cache
+C:\Users\SPCX\Desktop\skryptyg2\C#\obj\Debug\ParticleFxRenderer.DemoForm.resources
+C:\Users\SPCX\Desktop\skryptyg2\C#\obj\Debug\ParticleFxRenderer.csproj.GenerateResource.cache
+C:\Users\SPCX\Desktop\skryptyg2\C#\obj\Debug\ParticleFxRenderer.csproj.CoreCompileInputs.cache
