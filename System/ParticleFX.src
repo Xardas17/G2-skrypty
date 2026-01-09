@@ -1,0 +1,25 @@
+// GothicSourcer workspace file
+// WARNING: DO NOT EDIT OR DELETE THIS FILE!
+
+_Intern\ParticleFX.d
+Pfx\PfxInstEngine.d
+Pfx\PfxInst.d
+Pfx\PfxInstMagic.d
+
+//New Balance
+Pfx\Xardas\NB\PfxInstEngine.d
+Pfx\Xardas\NB\PfxInst.d
+Pfx\Xardas\NB\PfxInstMagic.d
+Pfx\Xardas\PfxInstMagic.d
+
+
+Pfx\Xardas\ZS_SLOT\*.d
+PFX\Xardas\WEAR_EFFECT\_XAR_WEAR_PFX_PROTO.d
+PFX\Xardas\WEAR_EFFECT\*.d
+PFX\Xardas\PrototypesEditor.d
+PFX\Xardas\InstancesEditor.d
+PFX\Xardas\InstancesEditor_OLD.d
+PFX\Xardas\InstancesEFFECT.d
+
+
+

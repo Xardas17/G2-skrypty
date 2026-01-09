@@ -1,0 +1,14 @@
+// GothicSourcer workspace file
+// WARNING: DO NOT EDIT OR DELETE THIS FILE!
+
+_Intern\VisualFX.d
+VisualFX\VisualFxInst.d
+
+VisualFX\Xardas\NB\*.d
+VisualFX\Xardas\VisualFxInst*.d
+VisualFX\Xardas\ZS_SLOT\*.d
+VisualFX\Xardas\WEAR_EFFECT\*.d
+VisualFX\Xardas\visualFXEditor.d
+VisualFX\Xardas\visualFXEFFECT.d
+
+
